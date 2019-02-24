@@ -1,6 +1,5 @@
 package org.sathyatech.raghu;
 
-import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,7 +13,8 @@ public class SpringBootStarterTestApplication implements CommandLineRunner{
 
 	public static void main(String[] args) {
 		SpringApplication s=new SpringApplication(SpringBootStarterTestApplication.class);
-		s.setBannerMode(Banner.Mode.OFF);
+		//s.setBannerMode(Banner.Mode.OFF);
+		//https://devops.datenkollektiv.de/banner.txt/index.html -- alpha
 		ConfigurableApplicationContext ac=s.run(args);
 		System.out.println(ac.getClass().getName());
 		
